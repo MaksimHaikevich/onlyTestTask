@@ -1,0 +1,134 @@
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 100px 160px;
+    margin: 0;
+}
+
+.title > h2 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #012B34;
+}
+
+.spoiler {
+    border-top: 1px solid #E6E6E6;
+}
+
+.spoiler:last-child {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main > h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    color: #012B34;
+    margin: 30px 0;
+}
+
+.open-button {
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+.open-button:active {
+    transform: rotate(0);
+}
+
+.spoiler-content {
+    font-size: 20px;
+    line-height: 150%;
+    max-height: 0;
+    max-width: 65%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.spoiler-content.active {
+    margin-bottom: 40px;
+}
+
+.spoiler-content > p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+    body {
+        padding: 80px 120px;
+    }
+
+    .spoiler-content.active {
+        margin-bottom: 30px;
+    }
+
+    .title > h2 {
+        font-size: 48px;
+    }
+    .title > h2:after {
+        content: ' dolor';
+    }
+
+    .main > h3 {
+        font-size: 27px;
+    }
+
+    .spoiler-content {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        padding: 70px 107px;
+    }
+
+    .title > h2 {
+        font-size: 42px;
+    }
+
+    .main > h3 {
+        font-size: 24px;
+    }
+
+    .spoiler-content {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 60px 40px;
+    }
+
+    .main > h3 {
+        font-size: 27px;
+    }
+
+    .spoiler-content {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 50px 24px;
+    }
+
+    .title > h2 {
+        font-size: 30px;
+    }
+
+    .main > h3 {
+        font-size: 24px;
+    }
+}
