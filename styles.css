@@ -38,6 +38,7 @@ body {
     border: 0;
     background: 0;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .open-button:active {
